@@ -1,0 +1,13 @@
+<div
+ style="
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ "
+>
+<button type="button" class="btn btn-primary" (click)="increment()">Increment</button>
+<div class="p-2">Current Count {{ count | async }}</div>
+<button type="button" class="btn btn-info m-2" (click)="decrement()">Decrement</button>
+<button type="button" class="btn btn-success" (click)="reset()">Reset Counter</button>
+</div>
